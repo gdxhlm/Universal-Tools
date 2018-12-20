@@ -237,7 +237,7 @@ public class Zgjm_Activity extends Activity implements View.OnClickListener {
 //                        Log.d(TAG, "szSpner: "+szSpner[1]);
  //                       Log.d(TAG, "szSpner: "+szSpner[2]);
 
-                    ArrayAdapter<String> adapter=new ArrayAdapter<String>(Zgjm_Activity.this,android.R.layout.simple_list_item_1,szSpner);
+                    ArrayAdapter<String> adapter=new ArrayAdapter<String>(Zgjm_Activity.this,R.layout.spinerzdy,szSpner);
                     adapter.notifyDataSetChanged();
                       //  mspinner.setAdapter();
                         mspinner.setAdapter(adapter);
