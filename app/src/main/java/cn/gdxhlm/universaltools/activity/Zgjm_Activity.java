@@ -31,7 +31,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.zip.GZIPInputStream;
 
-import cn.gdxhlm.universaltools.MainActivity;
 import cn.gdxhlm.universaltools.R;
 import cn.gdxhlm.universaltools.db.ZgjmSetGet;
 
