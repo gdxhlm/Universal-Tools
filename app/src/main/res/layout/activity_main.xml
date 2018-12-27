@@ -11,12 +11,20 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10dp">
+        android:padding="10dp"
+        >
         <Button
-            android:id="@+id/btn_zgjm"
+        android:id="@+id/btn_zgjm"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@mipmap/zgjm"
+        />
+        <Button
+            android:id="@+id/btn_robot"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:background="@mipmap/zgjm"
+            android:background="@mipmap/robot"
+            android:layout_marginLeft="10dp"
             />
 
     </LinearLayout>

@@ -27,6 +27,7 @@ import cn.gdxhlm.universaltools.utils.LogUtil;
 
 public class MainActivity extends Activity implements View.OnClickListener {
     private Button button_zgjm;
+    private Button button_robot;
     private int zdyversion=20181220;
     boolean needupdate=false;
 
@@ -129,10 +130,12 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
     private void controlOnClick() {
         button_zgjm.setOnClickListener(this);
+        button_robot.setOnClickListener(this);
     }
 
     private void findID() {
         button_zgjm = findViewById(R.id.btn_zgjm);
+        button_robot=findViewById(R.id.btn_robot);
     }
 
     @Override
@@ -141,6 +144,10 @@ public class MainActivity extends Activity implements View.OnClickListener {
             case R.id.btn_zgjm:
                 Intent intent=new Intent(MainActivity.this,Zgjm_Activity.class);
                 startActivity(intent);
+                break;
+            case R.id.btn_robot:
+                Intent intent1=new Intent(MainActivity.this,Robot_Activity.class);
+                startActivity(intent1);
                 break;
         }
     }
