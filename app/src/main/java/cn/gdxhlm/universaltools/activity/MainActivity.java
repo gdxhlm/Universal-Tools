@@ -24,6 +24,7 @@ import java.net.URL;
 
 import cn.gdxhlm.universaltools.R;
 import cn.gdxhlm.universaltools.utils.LogUtil;
+import cn.jpush.android.api.JPushInterface;
 
 public class MainActivity extends Activity implements View.OnClickListener {
     private Button button_zgjm;
@@ -38,6 +39,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         bbkz();//检测最新版本与本地版本做比较，判断是否跳转升级
         findID();/*实例化控件ID*/
         controlOnClick();/*响应控件ID点击事件*/
+        JPushInterface.requestPermission(this);
 
     }
 

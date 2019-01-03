@@ -9,6 +9,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 import cn.gdxhlm.universaltools.R;
+import cn.jpush.android.api.JPushInterface;
 
 public class Guid extends Activity {
 
@@ -16,6 +17,8 @@ public class Guid extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_guid);
+        JPushInterface.setDebugMode(true);
+        JPushInterface.init(this);
         Timer timer=new Timer();
         TimerTask timerTask=new TimerTask() {
             @Override
